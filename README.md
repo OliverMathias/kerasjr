@@ -1,2 +1,2 @@
-# KerasJr
-An Implementation of Keras by People Who Have no Right To Attempt This
+# kerasjr
+A python package to create and train simple dense neural networks.
