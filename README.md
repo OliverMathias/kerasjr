@@ -44,21 +44,21 @@ If we wanted to modify the activation functions of any layer we could do so easi
 Modifying the input layer's activation to sigmoid...
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
-model.input_layer_activation_function = "sigmoid" <-------
+model.input_layer_activation_function = "sigmoid" <<<<<
 model.train("cce", 10, alpha=.001)
 ```
 
 Modifying all the hidden layers' activation functions to leaky_relu
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
-model.hidden_layer_activation_function = "leaky_relu" <-------
+model.hidden_layer_activation_function = "leaky_relu" <<<<<
 model.train("cce", 10, alpha=.001)
 ```
 
 Modifying the output layer's activation function to tanh
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
-model.output_layer_activation_function = "tanh" <-------
+model.output_layer_activation_function = "tanh" <<<<<
 model.train("cce", 10, alpha=.001)
 ```
 **Note**, all these changes can be done to any layer interchangeably.
@@ -71,21 +71,21 @@ Modifying the networks loss function to mean squared error...
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
 model.output_layer_activation_function = "tanh"
-model.train("mse", 10, alpha=.001) <-------
+model.train("mse", 10, alpha=.001) <<<<<
 ```
 
 Modifying the networks loss function to mean absolute error...
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
 model.output_layer_activation_function = "tanh"
-model.train("mae", 10, alpha=.001) <-------
+model.train("mae", 10, alpha=.001) <<<<<
 ```
 
 Modifying the networks loss function to categorical cross entropy...
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
 model.output_layer_activation_function = "tanh"
-model.train("cce", 10, alpha=.001) <-------
+model.train("cce", 10, alpha=.001) <<<<<
 ```
 
 ### Picking The Number of Hidden Layers and Their Nodes
