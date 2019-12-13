@@ -111,7 +111,7 @@ Below is the network architecture diagram from the example above...
 
 
 ### Using Predict
-The final method in kerasjr is the `predict` method. This is just a forward pass through the network using the trained weights to do interence on passed in data. Below is an example of a how to use the `predict` method, simple instantiate a model, train it, and call `predict` on some data
+The final method in kerasjr is the `predict` method. This is just a forward pass through the network using the trained weights to do inference on passed in data. Below is an example of a how to use the `predict` method, simple instantiate a model, train it, and call `predict` on some data
 ``` python
 model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
 model.hidden_layer_activation_function = "leaky_relu"
