@@ -61,7 +61,7 @@ model = Model(x, y, number_of_hidden_layers=2, number_of_hidden_nodes=50)
 model.output_layer_activation_function = "tanh" <<<<<
 model.train("cce", 10, alpha=.001)
 ```
-**Note**, all these changes can be done to any layer interchangeably.
+**Note**, all these changes can be made to any layer interchangeably.
 
 
 ### Picking The Loss Function
