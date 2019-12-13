@@ -22,7 +22,7 @@ Below is a quick slide comparing the strengths & weaknesses of kerasjr and Keras
 kerasjr allows users to pick between 3 different layer activations, 3 loss functions, the number of hidden layers and the number of hidden nodes in each layer.
 
 The default code for kerasjr uses tanh activation functions for each layer and allows users to get a network up and running in lines. It looks like this...
-``` python
+``` 
 model = Model(x, y, number_of_hidden_layers=1, number_of_hidden_nodes=10)
 model.train("mse", 10000, alpha=.001)
 ```
